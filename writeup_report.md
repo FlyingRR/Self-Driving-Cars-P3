@@ -36,11 +36,15 @@ The model.py file contains the code for training and saving the convolution neur
 
 ####1. An appropriate model architecture has been employed
 
-I used a convolutional network similar to the [Nvidia's Self-Driving Cars](https://arxiv.org/pdf/1604.07316v1.pdf). The architecture of the network is:
+I used a convolutional network similar to the [Nvidia's Self-Driving Cars](https://arxiv.org/pdf/1604.07316v1.pdf). 
+
+The architecture of the network is:
+
 ![CNN architecture](images/nvidia.png) 
 
 
 **My convolutional network is :**
+
 ![my network](images/model.png)
 
 ####2. Attempts to reduce overfitting in the model

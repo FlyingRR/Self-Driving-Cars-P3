@@ -39,6 +39,9 @@ The model.py file contains the code for training and saving the convolution neur
 I used a convolutional network similar to the [Nvidia's Self-Driving Cars](https://arxiv.org/pdf/1604.07316v1.pdf). The architecture of the network is:
 ![CNN architecture](images/nvidia.png) 
 
+My convolutional network is :
+![my network](images/model.png)
+
 ####2. Attempts to reduce overfitting in the model
 
 The model was trained and validated on different data sets to ensure that the model was not overfitting. The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
@@ -69,7 +72,10 @@ To augment the data sat, I also flipped images, increased the brightness of the 
 
 When generating training images, every image in one batch of the generator is generated as follows: 1. randomly choose a right/middle/left camera, and add or subtracta tuned angles according to the original steering angle. 2. convert the image to RGB. 3. transform the image. 4. randomly augment the brightness of the image. 5. randomly filp the image.
 
+One example of preprocessed image:
+![img](images/preprocess.png)
+
 Then I used generators to feed the dataset to the model. I used 8 epochs, each eopch has 20000 training data and 400 validation data.
 
-After training, in the automomous dricing mode, the car can drive on the road well as video.mp4 shows.
+After training, in the automomous driving mode, the car can drive on the road well as video.mp4 shows.
 
